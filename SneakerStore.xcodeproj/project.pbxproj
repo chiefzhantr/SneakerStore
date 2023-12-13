@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33E6057932E45D280116C1FE /* Pods_SneakerStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D93393B45F4F278E91874CA5 /* Pods_SneakerStore.framework */; };
 		3652D5A02B29E116005FA742 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3652D59F2B29E116005FA742 /* AppDelegate.swift */; };
 		3652D5A22B29E116005FA742 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3652D5A12B29E116005FA742 /* SceneDelegate.swift */; };
 		3652D5A42B29E116005FA742 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3652D5A32B29E116005FA742 /* ViewController.swift */; };
@@ -24,6 +25,9 @@
 		3652D5A82B29E117005FA742 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3652D5AB2B29E117005FA742 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3652D5AD2B29E117005FA742 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D93393B45F4F278E91874CA5 /* Pods_SneakerStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SneakerStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFE1AAC1F437EAEE611B723F /* Pods-SneakerStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SneakerStore.release.xcconfig"; path = "Target Support Files/Pods-SneakerStore/Pods-SneakerStore.release.xcconfig"; sourceTree = "<group>"; };
+		FF1B5D9E84B7A86CCCC3023E /* Pods-SneakerStore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SneakerStore.debug.xcconfig"; path = "Target Support Files/Pods-SneakerStore/Pods-SneakerStore.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33E6057932E45D280116C1FE /* Pods_SneakerStore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				3652D59E2B29E116005FA742 /* SneakerStore */,
 				3652D59D2B29E116005FA742 /* Products */,
+				D6E4F7385DEDAE45BDDE8D3B /* Pods */,
+				7CC02F483BE7078C4D7949D0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = SneakerStore;
 			sourceTree = "<group>";
 		};
+		7CC02F483BE7078C4D7949D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D93393B45F4F278E91874CA5 /* Pods_SneakerStore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6E4F7385DEDAE45BDDE8D3B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FF1B5D9E84B7A86CCCC3023E /* Pods-SneakerStore.debug.xcconfig */,
+				EFE1AAC1F437EAEE611B723F /* Pods-SneakerStore.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3652D5B02B29E117005FA742 /* Build configuration list for PBXNativeTarget "SneakerStore" */;
 			buildPhases = (
+				14008453F0043D2CFB6BA73D /* [CP] Check Pods Manifest.lock */,
 				3652D5982B29E116005FA742 /* Sources */,
 				3652D5992B29E116005FA742 /* Frameworks */,
 				3652D59A2B29E116005FA742 /* Resources */,
+				9E8BC7D1DE88D4D9254FDDB1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14008453F0043D2CFB6BA73D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SneakerStore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E8BC7D1DE88D4D9254FDDB1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SneakerStore/Pods-SneakerStore-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SneakerStore/Pods-SneakerStore-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SneakerStore/Pods-SneakerStore-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3652D5982B29E116005FA742 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		3652D5B12B29E117005FA742 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF1B5D9E84B7A86CCCC3023E /* Pods-SneakerStore.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +380,7 @@
 		};
 		3652D5B22B29E117005FA742 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFE1AAC1F437EAEE611B723F /* Pods-SneakerStore.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
