@@ -40,7 +40,7 @@ final class TabBarViewController: UITabBarController {
     private func configureColors() {
         tabBar.unselectedItemTintColor = .lightGray
         tabBar.tintColor = .black
-        tabBar.barTintColor = .orange
+        tabBar.barTintColor = .white
     }
     
     private func configureSelectedTabBar(_ tabBar: TabBar) {
