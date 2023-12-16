@@ -9,13 +9,13 @@ import Foundation
 import UIKit
 
 extension UILabel {
-    static func regular(text: String, textAlign: NSTextAlignment = .center, size: CGFloat = 16) -> UILabel {
+    static func regular(text: String, textAlign: NSTextAlignment = .center, size: CGFloat = 16, color: UIColor = .black) -> UILabel {
         return .init({
             $0.text = text
             $0.numberOfLines = 0
-            $0.textColor = UIColor.black
+            $0.textColor = color
             $0.textAlignment = textAlign
-            $0.font = UIFont(name: "SFUIText-Regular", size: size)
+            $0.font = UIFont.systemFont(ofSize: size)
         })
     }
 
@@ -25,8 +25,7 @@ extension UILabel {
             $0.numberOfLines = 0
             $0.textAlignment = textAlign
             $0.textColor = color
-            $0.font = UIFont(name: "SFUIText-Regular", size: size)
-
+            $0.font = UIFont.systemFont(ofSize: size, weight: .bold)
         })
     }
 }

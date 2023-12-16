@@ -6,22 +6,18 @@
 //
 
 import UIKit
+import SnapKit
 
-class OnboardingPageViewController: UIViewController {
+final class OnboardingPageViewController: UIViewController {
     //MARK: Private properties
-    private let titleLabel = UILabel()
-    private let descriptionLabel = UILabel()
+    private let backgroundImageView = UIImageView()
     
     //MARK: Public properties
-    var titleText: String?
-    var descriptionText: String?
     var backgroundImage: UIImage?
     
     //MARK: Init
-    init(title: String, description: String, backgroundImage: UIImage) {
-        
-        titleText = title
-        descriptionText = description
+    init(backgroundImage: UIImage?) {
+        self.backgroundImage = backgroundImage
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -32,7 +28,12 @@ class OnboardingPageViewController: UIViewController {
     //MARK: LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        titleLabel.text = titleText
-        descriptionLabel.text = descriptionText
+        self.view.backgroundColor = .white
+        self.view.addSubview(backgroundImageView)
+        
+        backgroundImageView.image = backgroundImage
+        backgroundImageView.snp.makeConstraints {
+            $0.edges.equalToSuperview()
+        }
     }
 }
