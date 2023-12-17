@@ -4,20 +4,24 @@ import SnapKit
 // MARK: - HomeViewController
 
 class HomeViewController: UIViewController {
+    private var shoes = [Shoes]()
+    
     private lazy var collectionView = HomeCollectionViewFactory().makeCollectionView(
         dataSource: self,
         delegate: self
     )
     
-    private var shoes = [Shoes]()
-    private let shoesService = ShoesService()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setup()
-        setupServices()
-        shoes = shoesService.getAllShoes()
+        shoes = ShoesService.shared.getAllShoes()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        collectionView.reloadData()
     }
     
     private func configureColors() {
@@ -39,10 +43,6 @@ class HomeViewController: UIViewController {
                 UIEdgeInsets(top: 10, left: 16, bottom: 10, right: 16)
             )
         }
-    }
-    
-    private func setupServices() {
-        shoesService.delegate = self
     }
 }
 
@@ -70,21 +70,14 @@ extension HomeViewController: UICollectionViewDataSource {
 
 extension HomeViewController: UICollectionViewDelegate { }
 
-// MARK: - ShoesServiceDelegate
-
-extension HomeViewController: ShoesServiceDelegate {
-    func cartDidUpdate(in service: ShoesService) {
-        collectionView.reloadData()
-    }
-}
-
 // MARK: - ShoesCellDelegate
 
 extension HomeViewController: ShoesCellDelegate {
     func shoesCell(didTapActionButton button: UIButton, with shoes: Shoes) {
         shoes.isAdded
-            ? shoesService.removeShoesFromCart(shoes)
-            : shoesService.addShoesToCart(shoes)
+            ? ShoesService.shared.removeShoesFromCart(shoes)
+            : ShoesService.shared.addShoesToCart(shoes)
         shoes.isAdded = !shoes.isAdded
+        collectionView.reloadData()
     }
 }

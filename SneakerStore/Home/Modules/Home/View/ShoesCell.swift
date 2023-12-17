@@ -51,6 +51,7 @@ class ShoesCell: UICollectionViewCell {
         subtitleLabel.text = viewModel.subtitle
         priceLabel.text = viewModel.price
         actionButton.setTitle(viewModel.actionButtonTitle, for: .normal)
+        actionButton.backgroundColor = viewModel.actionButtonBackgroundColor
     }
     
     private func configureColors() {

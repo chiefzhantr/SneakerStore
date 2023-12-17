@@ -4,6 +4,9 @@ final class TabBarCoordinator: Coordinator {
     var navigationController: UINavigationController
     private let modulesFactory = TabBarModulesFactory()
     
+    private var homeCoordinator: HomeCoordinator?
+    private var cartCoordinator: CartCoordinator?
+    
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
@@ -20,8 +23,8 @@ final class TabBarCoordinator: Coordinator {
         let homeNavigationController = UINavigationController()
         homeNavigationController.tabBarItem.title = "Catalog"
         homeNavigationController.tabBarItem.image = UIImage(systemName: "house.fill")
-        let homeCoordinator = HomeCoordinator(navigationController: homeNavigationController)
-        homeCoordinator.start()
+        homeCoordinator = HomeCoordinator(navigationController: homeNavigationController)
+        homeCoordinator?.start()
         return homeNavigationController
     }
     
@@ -29,8 +32,8 @@ final class TabBarCoordinator: Coordinator {
         let cartNavigationController = UINavigationController()
         cartNavigationController.tabBarItem.title = "Cart"
         cartNavigationController.tabBarItem.image = UIImage(systemName: "cart.fill")
-        let cartCoordinator = CartCoordinator(navigationController: cartNavigationController)
-        cartCoordinator.start()
+        cartCoordinator = CartCoordinator(navigationController: cartNavigationController)
+        cartCoordinator?.start()
         return cartNavigationController
     }
     
