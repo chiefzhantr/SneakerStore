@@ -1,20 +1,15 @@
 import UIKit
 
-// MARK: - ShoesServiceDelegate
-
-protocol ShoesServiceDelegate: AnyObject {
-    func cartDidUpdate(in service: ShoesService)
-}
-
 // MARK: - ShoesService
 
 final class ShoesService {
-    public var cartItems = [Shoes]()
-    weak var delegate: ShoesServiceDelegate?
+    static let shared = ShoesService()
+    
+    var cartItems = [Shoes]()
     
     init() {}
     
-    public func getAllShoes() -> [Shoes] {
+    func getAllShoes() -> [Shoes] {
         return [
             Shoes(
                 image: UIImage(named: "shoes-1")!,
@@ -61,18 +56,16 @@ final class ShoesService {
         ]
     }
     
-    public func addShoesToCart(_ item: Shoes) {
+    func addShoesToCart(_ item: Shoes) {
         if let existingItemIndex = cartItems.firstIndex(where: { $0.equals(item) }) {
             cartItems[existingItemIndex].quantity += 1
         } else {
             item.quantity = 1
             cartItems.append(item)
         }
-        
-        delegate?.cartDidUpdate(in: self)
     }
     
-    public func removeShoesFromCart(_ item: Shoes) {
+    func removeShoesFromCart(_ item: Shoes) {
         guard let itemIndex = cartItems.firstIndex(where: { $0.equals(item) }) else {
             return
         }
@@ -82,7 +75,5 @@ final class ShoesService {
         } else {
             cartItems.remove(at: itemIndex)
         }
-
-        delegate?.cartDidUpdate(in: self)
     }
 }

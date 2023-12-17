@@ -21,6 +21,12 @@
 		155FF4832B29FFC2000971E1 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155FF4822B29FFC2000971E1 /* CartViewController.swift */; };
 		155FF4872B2A00AD000971E1 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155FF4862B2A00AD000971E1 /* HomeCoordinator.swift */; };
 		155FF48B2B2A0148000971E1 /* CartCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155FF48A2B2A0148000971E1 /* CartCoordinator.swift */; };
+		15A3F4D42B2EC71F004F4E44 /* CartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A3F4D32B2EC71F004F4E44 /* CartCell.swift */; };
+		15A3F4D62B2EC980004F4E44 /* CartTableViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A3F4D52B2EC980004F4E44 /* CartTableViewFactory.swift */; };
+		15A3F4D82B2ECA4F004F4E44 /* CartEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A3F4D72B2ECA4F004F4E44 /* CartEmptyView.swift */; };
+		15A3F4DA2B2ED812004F4E44 /* CartCellActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A3F4D92B2ED812004F4E44 /* CartCellActionButton.swift */; };
+		15A3F4DC2B2EE02F004F4E44 /* CartTotalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A3F4DB2B2EE02F004F4E44 /* CartTotalView.swift */; };
+		15A3F4DF2B2EE55E004F4E44 /* SuccessOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A3F4DE2B2EE55E004F4E44 /* SuccessOrderViewController.swift */; };
 		33E6057932E45D280116C1FE /* Pods_SneakerStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D93393B45F4F278E91874CA5 /* Pods_SneakerStore.framework */; };
 		3652D5A02B29E116005FA742 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3652D59F2B29E116005FA742 /* AppDelegate.swift */; };
 		3652D5A42B29E116005FA742 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3652D5A32B29E116005FA742 /* HomeViewController.swift */; };
@@ -56,6 +62,12 @@
 		155FF4822B29FFC2000971E1 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		155FF4862B2A00AD000971E1 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		155FF48A2B2A0148000971E1 /* CartCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartCoordinator.swift; sourceTree = "<group>"; };
+		15A3F4D32B2EC71F004F4E44 /* CartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartCell.swift; sourceTree = "<group>"; };
+		15A3F4D52B2EC980004F4E44 /* CartTableViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewFactory.swift; sourceTree = "<group>"; };
+		15A3F4D72B2ECA4F004F4E44 /* CartEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartEmptyView.swift; sourceTree = "<group>"; };
+		15A3F4D92B2ED812004F4E44 /* CartCellActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartCellActionButton.swift; sourceTree = "<group>"; };
+		15A3F4DB2B2EE02F004F4E44 /* CartTotalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTotalView.swift; sourceTree = "<group>"; };
+		15A3F4DE2B2EE55E004F4E44 /* SuccessOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessOrderViewController.swift; sourceTree = "<group>"; };
 		3652D59C2B29E116005FA742 /* SneakerStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SneakerStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3652D59F2B29E116005FA742 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3652D5A32B29E116005FA742 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -224,7 +236,8 @@
 		155FF4892B2A0125000971E1 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				155FF4822B29FFC2000971E1 /* CartViewController.swift */,
+				15A3F4DD2B2EE54E004F4E44 /* SuccessOrder */,
+				15A3F4D02B2EC6F9004F4E44 /* Cart */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -237,6 +250,43 @@
 				3652D5A82B29E117005FA742 /* Assets.xcassets */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		15A3F4D02B2EC6F9004F4E44 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				15A3F4D22B2EC708004F4E44 /* Service */,
+				15A3F4D12B2EC703004F4E44 /* View */,
+				155FF4822B29FFC2000971E1 /* CartViewController.swift */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		15A3F4D12B2EC703004F4E44 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				15A3F4D32B2EC71F004F4E44 /* CartCell.swift */,
+				15A3F4D72B2ECA4F004F4E44 /* CartEmptyView.swift */,
+				15A3F4D92B2ED812004F4E44 /* CartCellActionButton.swift */,
+				15A3F4DB2B2EE02F004F4E44 /* CartTotalView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		15A3F4D22B2EC708004F4E44 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				15A3F4D52B2EC980004F4E44 /* CartTableViewFactory.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		15A3F4DD2B2EE54E004F4E44 /* SuccessOrder */ = {
+			isa = PBXGroup;
+			children = (
+				15A3F4DE2B2EE55E004F4E44 /* SuccessOrderViewController.swift */,
+			);
+			path = SuccessOrder;
 			sourceTree = "<group>";
 		};
 		3652D5932B29E116005FA742 = {
@@ -487,9 +537,13 @@
 				3652D5C22B2CB94E005FA742 /* UILabel+Extensions.swift in Sources */,
 				154454D92B2D67FA0049682B /* Shoes.swift in Sources */,
 				154454E52B2D77970049682B /* ShoesCellViewModel.swift in Sources */,
+				15A3F4D62B2EC980004F4E44 /* CartTableViewFactory.swift in Sources */,
 				155FF47A2B29F7D4000971E1 /* TabBarModulesFactory.swift in Sources */,
 				155FF4722B29F466000971E1 /* Coordinator.swift in Sources */,
 				154454DF2B2D6B460049682B /* Colors.swift in Sources */,
+				15A3F4D82B2ECA4F004F4E44 /* CartEmptyView.swift in Sources */,
+				15A3F4DC2B2EE02F004F4E44 /* CartTotalView.swift in Sources */,
+				15A3F4DF2B2EE55E004F4E44 /* SuccessOrderViewController.swift in Sources */,
 				155FF4832B29FFC2000971E1 /* CartViewController.swift in Sources */,
 				3652D5A42B29E116005FA742 /* HomeViewController.swift in Sources */,
 				3652D5C92B2CBAC3005FA742 /* ProfileViewController.swift in Sources */,
@@ -501,6 +555,8 @@
 				3652D5C62B2CBA9D005FA742 /* ProfileCoordinator.swift in Sources */,
 				155FF48B2B2A0148000971E1 /* CartCoordinator.swift in Sources */,
 				154454DC2B2D69620049682B /* HomeCollectionViewFactory.swift in Sources */,
+				15A3F4DA2B2ED812004F4E44 /* CartCellActionButton.swift in Sources */,
+				15A3F4D42B2EC71F004F4E44 /* CartCell.swift in Sources */,
 				155FF47E2B29F81B000971E1 /* TabBarViewController.swift in Sources */,
 				3652D5BB2B2CB1DD005FA742 /* OnboardingViewController.swift in Sources */,
 				155FF4872B2A00AD000971E1 /* HomeCoordinator.swift in Sources */,

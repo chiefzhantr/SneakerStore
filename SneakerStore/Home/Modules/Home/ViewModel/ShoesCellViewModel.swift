@@ -13,20 +13,16 @@ struct ShoesCellViewModel {
         shoes.shoesDescription
     }
     
-    var price: String {
-        if shoes.isAdded {
-            return "1 • $\(shoes.price)"
-        }
-        
-        return "$\(shoes.price)"
+    var price: String {        
+        shoes.isAdded ? "1 • $\(shoes.price)" : "$\(shoes.price)"
     }
     
     var actionButtonTitle: String {
-        if shoes.isAdded {
-            return "Remove"
-        }
-        
-        return "Add to cart"
+        shoes.isAdded ? "Remove" : "Add to cart"
+    }
+    
+    var actionButtonBackgroundColor: UIColor {
+        shoes.isAdded ? .black.withAlphaComponent(0.8) : .black
     }
     
     let shoes: Shoes
