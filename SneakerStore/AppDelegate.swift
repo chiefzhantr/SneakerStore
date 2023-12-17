@@ -17,15 +17,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow()
         window?.makeKeyAndVisible()
         
-        let navigationController = UINavigationController(rootViewController: OnboardingViewController())
-        window?.rootViewController = navigationController
-        navigationController.navigationBar.tintColor = .black
-        
-//        let navigationController = UINavigationController()
-//        window?.rootViewController = navigationController
-//
-//        tabBarCoordinator = TabBarCoordinator(navigationController: navigationController)
-//        tabBarCoordinator?.start()
+        let accountService = AccountService()
+            
+        if accountService.isLogged() {
+            let navigationController = UINavigationController()
+            window?.rootViewController = navigationController
+            tabBarCoordinator = TabBarCoordinator(navigationController: navigationController)
+            tabBarCoordinator?.start()
+        } else {
+            let navigationController = UINavigationController(rootViewController: OnboardingViewController())
+            navigationController.navigationBar.tintColor = .black
+            window?.rootViewController = navigationController
+            
+        }
         
         return true
     }

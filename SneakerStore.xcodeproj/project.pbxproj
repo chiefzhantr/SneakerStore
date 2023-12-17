@@ -39,6 +39,7 @@
 		36A662D82B2DBBFA000D3C55 /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A662D72B2DBBFA000D3C55 /* UIButton+Extensions.swift */; };
 		36A662DA2B2DC369000D3C55 /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A662D92B2DC369000D3C55 /* AuthorizationViewController.swift */; };
 		36A662DD2B2DD96F000D3C55 /* AccountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A662DC2B2DD96F000D3C55 /* AccountService.swift */; };
+		36A662E12B2EF1D4000D3C55 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A662E02B2EF1D4000D3C55 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,7 @@
 		36A662D72B2DBBFA000D3C55 /* UIButton+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
 		36A662D92B2DC369000D3C55 /* AuthorizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
 		36A662DC2B2DD96F000D3C55 /* AccountService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountService.swift; sourceTree = "<group>"; };
+		36A662E02B2EF1D4000D3C55 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D93393B45F4F278E91874CA5 /* Pods_SneakerStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SneakerStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFE1AAC1F437EAEE611B723F /* Pods-SneakerStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SneakerStore.release.xcconfig"; path = "Target Support Files/Pods-SneakerStore/Pods-SneakerStore.release.xcconfig"; sourceTree = "<group>"; };
 		FF1B5D9E84B7A86CCCC3023E /* Pods-SneakerStore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SneakerStore.debug.xcconfig"; path = "Target Support Files/Pods-SneakerStore/Pods-SneakerStore.debug.xcconfig"; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 		154454E02B2D6CEA0049682B /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				36A662DC2B2DD96F000D3C55 /* AccountService.swift */,
 				154454E12B2D6E6B0049682B /* ShoesService.swift */,
 			);
 			path = Services;
@@ -243,7 +246,6 @@
 			isa = PBXGroup;
 			children = (
 				3652D59E2B29E116005FA742 /* SneakerStore */,
-				36A662DB2B2DD95C000D3C55 /* Services */,
 				3652D59D2B29E116005FA742 /* Products */,
 				D6E4F7385DEDAE45BDDE8D3B /* Pods */,
 				7CC02F483BE7078C4D7949D0 /* Frameworks */,
@@ -261,9 +263,9 @@
 		3652D59E2B29E116005FA742 /* SneakerStore */ = {
 			isa = PBXGroup;
 			children = (
-				154454E02B2D6CEA0049682B /* Services */,
 				3652D5AD2B29E117005FA742 /* Info.plist */,
 				3652D59F2B29E116005FA742 /* AppDelegate.swift */,
+				154454E02B2D6CEA0049682B /* Services */,
 				36A662D12B2DB921000D3C55 /* Authorization */,
 				3652D5B62B2CB18E005FA742 /* Onboarding */,
 				155FF4882B2A0116000971E1 /* Cart */,
@@ -289,6 +291,7 @@
 		3652D5B72B2CB19A005FA742 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				36A662DE2B2ED4BA000D3C55 /* New Group */,
 				3652D5BA2B2CB1DD005FA742 /* OnboardingViewController.swift */,
 				3652D5BC2B2CB6F1005FA742 /* OnboardingPageViewController.swift */,
 			);
@@ -335,18 +338,26 @@
 		36A662D42B2DB944000D3C55 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				36A662DF2B2EF1C8000D3C55 /* Models */,
 				36A662D52B2DB974000D3C55 /* WelcomeViewController.swift */,
 				36A662D92B2DC369000D3C55 /* AuthorizationViewController.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
 		};
-		36A662DB2B2DD95C000D3C55 /* Services */ = {
+		36A662DE2B2ED4BA000D3C55 /* New Group */ = {
 			isa = PBXGroup;
 			children = (
-				36A662DC2B2DD96F000D3C55 /* AccountService.swift */,
 			);
-			path = Services;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		36A662DF2B2EF1C8000D3C55 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				36A662E02B2EF1D4000D3C55 /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		7CC02F483BE7078C4D7949D0 /* Frameworks */ = {
@@ -488,6 +499,7 @@
 				154454D92B2D67FA0049682B /* Shoes.swift in Sources */,
 				154454E52B2D77970049682B /* ShoesCellViewModel.swift in Sources */,
 				155FF47A2B29F7D4000971E1 /* TabBarModulesFactory.swift in Sources */,
+				36A662E12B2EF1D4000D3C55 /* User.swift in Sources */,
 				155FF4722B29F466000971E1 /* Coordinator.swift in Sources */,
 				154454DF2B2D6B460049682B /* Colors.swift in Sources */,
 				155FF4832B29FFC2000971E1 /* CartViewController.swift in Sources */,

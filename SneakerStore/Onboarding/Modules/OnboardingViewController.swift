@@ -59,21 +59,6 @@ final class OnboardingViewController: UIViewController {
     }
     
     private func configureBlurImageView() {
-        
-        let v = UIView()
-        self.view.addSubview(v)
-        
-        v.snp.makeConstraints {
-            $0.leading.trailing.bottom.equalToSuperview()
-            $0.height.equalTo(288)
-        }
-        
-        v.addSubview(blurImageView)
-        v.addSubview(titleLabel)
-        v.addSubview(descriptionLabel)
-        v.addSubview(pageControl)
-        v.addSubview(nextButton)
-        
         blurImageView.image = blurImages[currentPage]
         
         pageControl.numberOfPages = 3
@@ -83,6 +68,20 @@ final class OnboardingViewController: UIViewController {
     }
     
     private func setConstraints() {
+        let backgroundView = UIView()
+        self.view.addSubview(backgroundView)
+        
+        backgroundView.addSubview(blurImageView)
+        backgroundView.addSubview(titleLabel)
+        backgroundView.addSubview(descriptionLabel)
+        backgroundView.addSubview(pageControl)
+        backgroundView.addSubview(nextButton)
+        
+        backgroundView.snp.makeConstraints {
+            $0.leading.trailing.bottom.equalToSuperview()
+            $0.height.equalTo(288)
+        }
+        
         blurImageView.snp.makeConstraints {
             $0.edges.equalToSuperview()
         }
