@@ -8,10 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		155FF4722B29F466000971E1 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155FF4712B29F466000971E1 /* Coordinator.swift */; };
-		155FF4782B29F796000971E1 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155FF4772B29F796000971E1 /* TabBarCoordinator.swift */; };
-		155FF47A2B29F7D4000971E1 /* TabBarModulesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155FF4792B29F7D4000971E1 /* TabBarModulesFactory.swift */; };
-		155FF47E2B29F81B000971E1 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155FF47D2B29F81B000971E1 /* TabBarViewController.swift */; };
-		155FF4812B29FB7A000971E1 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155FF4802B29FB7A000971E1 /* TabBar.swift */; };
 		155FF4832B29FFC2000971E1 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155FF4822B29FFC2000971E1 /* CartViewController.swift */; };
 		155FF4872B2A00AD000971E1 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155FF4862B2A00AD000971E1 /* HomeCoordinator.swift */; };
 		155FF48B2B2A0148000971E1 /* CartCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155FF48A2B2A0148000971E1 /* CartCoordinator.swift */; };
@@ -20,14 +16,17 @@
 		3652D5A42B29E116005FA742 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3652D5A32B29E116005FA742 /* HomeViewController.swift */; };
 		3652D5A92B29E117005FA742 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3652D5A82B29E117005FA742 /* Assets.xcassets */; };
 		3652D5AC2B29E117005FA742 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3652D5AA2B29E117005FA742 /* LaunchScreen.storyboard */; };
+		4BCA21C02B2DB9FF00B422E1 /* SignOutPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCA21BF2B2DB9FF00B422E1 /* SignOutPopUpViewController.swift */; };
+		4BE6BCB62B2CC3D60068F4BA /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE6BCB32B2CC3D60068F4BA /* ProfileCoordinator.swift */; };
+		4BE6BCB72B2CC3D60068F4BA /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE6BCB52B2CC3D60068F4BA /* ProfileViewController.swift */; };
+		4BE6BCBF2B2CC3E50068F4BA /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE6BCB92B2CC3E50068F4BA /* TabBarCoordinator.swift */; };
+		4BE6BCC02B2CC3E50068F4BA /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE6BCBB2B2CC3E50068F4BA /* TabBar.swift */; };
+		4BE6BCC12B2CC3E50068F4BA /* TabBarModulesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE6BCBC2B2CC3E50068F4BA /* TabBarModulesFactory.swift */; };
+		4BE6BCC22B2CC3E50068F4BA /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE6BCBE2B2CC3E50068F4BA /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		155FF4712B29F466000971E1 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		155FF4772B29F796000971E1 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
-		155FF4792B29F7D4000971E1 /* TabBarModulesFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarModulesFactory.swift; sourceTree = "<group>"; };
-		155FF47D2B29F81B000971E1 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
-		155FF4802B29FB7A000971E1 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		155FF4822B29FFC2000971E1 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		155FF4862B2A00AD000971E1 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		155FF48A2B2A0148000971E1 /* CartCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartCoordinator.swift; sourceTree = "<group>"; };
@@ -37,6 +36,13 @@
 		3652D5A82B29E117005FA742 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3652D5AB2B29E117005FA742 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3652D5AD2B29E117005FA742 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BCA21BF2B2DB9FF00B422E1 /* SignOutPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOutPopUpViewController.swift; sourceTree = "<group>"; };
+		4BE6BCB32B2CC3D60068F4BA /* ProfileCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
+		4BE6BCB52B2CC3D60068F4BA /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		4BE6BCB92B2CC3E50068F4BA /* TabBarCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		4BE6BCBB2B2CC3E50068F4BA /* TabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		4BE6BCBC2B2CC3E50068F4BA /* TabBarModulesFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarModulesFactory.swift; sourceTree = "<group>"; };
+		4BE6BCBE2B2CC3E50068F4BA /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		D93393B45F4F278E91874CA5 /* Pods_SneakerStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SneakerStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFE1AAC1F437EAEE611B723F /* Pods-SneakerStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SneakerStore.release.xcconfig"; path = "Target Support Files/Pods-SneakerStore/Pods-SneakerStore.release.xcconfig"; sourceTree = "<group>"; };
 		FF1B5D9E84B7A86CCCC3023E /* Pods-SneakerStore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SneakerStore.debug.xcconfig"; path = "Target Support Files/Pods-SneakerStore/Pods-SneakerStore.debug.xcconfig"; sourceTree = "<group>"; };
@@ -68,33 +74,6 @@
 				155FF4712B29F466000971E1 /* Coordinator.swift */,
 			);
 			path = Coordinator;
-			sourceTree = "<group>";
-		};
-		155FF4762B29F772000971E1 /* TabBar */ = {
-			isa = PBXGroup;
-			children = (
-				155FF47F2B29FB71000971E1 /* Model */,
-				155FF47C2B29F807000971E1 /* Modules */,
-				155FF4772B29F796000971E1 /* TabBarCoordinator.swift */,
-				155FF4792B29F7D4000971E1 /* TabBarModulesFactory.swift */,
-			);
-			path = TabBar;
-			sourceTree = "<group>";
-		};
-		155FF47C2B29F807000971E1 /* Modules */ = {
-			isa = PBXGroup;
-			children = (
-				155FF47D2B29F81B000971E1 /* TabBarViewController.swift */,
-			);
-			path = Modules;
-			sourceTree = "<group>";
-		};
-		155FF47F2B29FB71000971E1 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				155FF4802B29FB7A000971E1 /* TabBar.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		155FF4842B2A0098000971E1 /* Home */ = {
@@ -165,11 +144,58 @@
 				3652D59F2B29E116005FA742 /* AppDelegate.swift */,
 				155FF4882B2A0116000971E1 /* Cart */,
 				155FF4842B2A0098000971E1 /* Home */,
-				155FF4762B29F772000971E1 /* TabBar */,
+				4BE6BCB22B2CC3D60068F4BA /* Profile */,
+				4BE6BCB82B2CC3E50068F4BA /* TabBar */,
 				155FF46E2B29F440000971E1 /* UIKit */,
 				155FF48C2B2A0176000971E1 /* Utilities */,
 			);
 			path = SneakerStore;
+			sourceTree = "<group>";
+		};
+		4BE6BCB22B2CC3D60068F4BA /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				4BE6BCB32B2CC3D60068F4BA /* ProfileCoordinator.swift */,
+				4BE6BCB42B2CC3D60068F4BA /* Modules */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		4BE6BCB42B2CC3D60068F4BA /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				4BE6BCB52B2CC3D60068F4BA /* ProfileViewController.swift */,
+				4BCA21BF2B2DB9FF00B422E1 /* SignOutPopUpViewController.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		4BE6BCB82B2CC3E50068F4BA /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				4BE6BCB92B2CC3E50068F4BA /* TabBarCoordinator.swift */,
+				4BE6BCBA2B2CC3E50068F4BA /* Model */,
+				4BE6BCBC2B2CC3E50068F4BA /* TabBarModulesFactory.swift */,
+				4BE6BCBD2B2CC3E50068F4BA /* Modules */,
+			);
+			name = TabBar;
+			path = ../../../../../Downloads/TabBar;
+			sourceTree = "<group>";
+		};
+		4BE6BCBA2B2CC3E50068F4BA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4BE6BCBB2B2CC3E50068F4BA /* TabBar.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4BE6BCBD2B2CC3E50068F4BA /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				4BE6BCBE2B2CC3E50068F4BA /* TabBarViewController.swift */,
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		7CC02F483BE7078C4D7949D0 /* Frameworks */ = {
@@ -303,16 +329,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				155FF47A2B29F7D4000971E1 /* TabBarModulesFactory.swift in Sources */,
+				4BE6BCC22B2CC3E50068F4BA /* TabBarViewController.swift in Sources */,
+				4BE6BCB62B2CC3D60068F4BA /* ProfileCoordinator.swift in Sources */,
 				155FF4722B29F466000971E1 /* Coordinator.swift in Sources */,
 				155FF4832B29FFC2000971E1 /* CartViewController.swift in Sources */,
 				3652D5A42B29E116005FA742 /* HomeViewController.swift in Sources */,
-				155FF4812B29FB7A000971E1 /* TabBar.swift in Sources */,
+				4BE6BCBF2B2CC3E50068F4BA /* TabBarCoordinator.swift in Sources */,
+				4BE6BCB72B2CC3D60068F4BA /* ProfileViewController.swift in Sources */,
 				155FF48B2B2A0148000971E1 /* CartCoordinator.swift in Sources */,
-				155FF47E2B29F81B000971E1 /* TabBarViewController.swift in Sources */,
+				4BE6BCC12B2CC3E50068F4BA /* TabBarModulesFactory.swift in Sources */,
+				4BCA21C02B2DB9FF00B422E1 /* SignOutPopUpViewController.swift in Sources */,
 				155FF4872B2A00AD000971E1 /* HomeCoordinator.swift in Sources */,
-				155FF4782B29F796000971E1 /* TabBarCoordinator.swift in Sources */,
 				3652D5A02B29E116005FA742 /* AppDelegate.swift in Sources */,
+				4BE6BCC02B2CC3E50068F4BA /* TabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
