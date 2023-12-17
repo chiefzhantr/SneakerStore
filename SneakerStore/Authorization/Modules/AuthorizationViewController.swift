@@ -43,7 +43,7 @@ class AuthorizationViewController: UIViewController {
     
     private let actionButton = UIButton.cornered(titleText: "")
     
-    var accountService : AccountService?
+    var accountService = AccountService()
     var authType : AuthorizationType
     
     //MARK: LifeCycle
@@ -126,7 +126,11 @@ class AuthorizationViewController: UIViewController {
             statusLabel.text = "Username or password is wrong!"
             return
         }
-        accountService?.checkUser(username: username, password: password)
+        if accountService.checkUser(username: username, password: password) {
+            navigateToMainView()
+        } else {
+            statusLabel.text = "Username or password is wrong!"
+        }
     }
     
     @objc func signUp() {
@@ -138,8 +142,17 @@ class AuthorizationViewController: UIViewController {
             statusLabel.text = "Passwords are different!"
             return
         }
-        
-        accountService?.createUser(username: username, password: password)
+        accountService.createUser(username: username, password: password)
+        navigateToMainView()
+    }
+    
+    private func navigateToMainView() {
+        let navigationController = UINavigationController()
+        let tabBarCoordinator = TabBarCoordinator(navigationController: navigationController)
+        tabBarCoordinator.start()
+        navigationController.modalTransitionStyle = .flipHorizontal
+        navigationController.modalPresentationStyle = .fullScreen
+        present(navigationController,animated: true)
     }
 }
 
