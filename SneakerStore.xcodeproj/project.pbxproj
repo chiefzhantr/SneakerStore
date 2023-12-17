@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		154454D62B2D67CC0049682B /* ShoesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154454D52B2D67CC0049682B /* ShoesCell.swift */; };
+		154454D92B2D67FA0049682B /* Shoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154454D82B2D67FA0049682B /* Shoes.swift */; };
+		154454DC2B2D69620049682B /* HomeCollectionViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154454DB2B2D69620049682B /* HomeCollectionViewFactory.swift */; };
+		154454DF2B2D6B460049682B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154454DE2B2D6B460049682B /* Colors.swift */; };
+		154454E22B2D6E6B0049682B /* ShoesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154454E12B2D6E6B0049682B /* ShoesService.swift */; };
+		154454E52B2D77970049682B /* ShoesCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154454E42B2D77970049682B /* ShoesCellViewModel.swift */; };
 		155FF4722B29F466000971E1 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155FF4712B29F466000971E1 /* Coordinator.swift */; };
 		155FF4782B29F796000971E1 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155FF4772B29F796000971E1 /* TabBarCoordinator.swift */; };
 		155FF47A2B29F7D4000971E1 /* TabBarModulesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155FF4792B29F7D4000971E1 /* TabBarModulesFactory.swift */; };
@@ -36,6 +42,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		154454D52B2D67CC0049682B /* ShoesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoesCell.swift; sourceTree = "<group>"; };
+		154454D82B2D67FA0049682B /* Shoes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shoes.swift; sourceTree = "<group>"; };
+		154454DB2B2D69620049682B /* HomeCollectionViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewFactory.swift; sourceTree = "<group>"; };
+		154454DE2B2D6B460049682B /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		154454E12B2D6E6B0049682B /* ShoesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoesService.swift; sourceTree = "<group>"; };
+		154454E42B2D77970049682B /* ShoesCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoesCellViewModel.swift; sourceTree = "<group>"; };
 		155FF4712B29F466000971E1 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		155FF4772B29F796000971E1 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
 		155FF4792B29F7D4000971E1 /* TabBarModulesFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarModulesFactory.swift; sourceTree = "<group>"; };
@@ -80,6 +92,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		154454D32B2D67B70049682B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				154454E32B2D778C0049682B /* ViewModel */,
+				154454DA2B2D694A0049682B /* Service */,
+				154454D72B2D67EB0049682B /* Model */,
+				154454D42B2D67BF0049682B /* View */,
+				3652D5A32B29E116005FA742 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		154454D42B2D67BF0049682B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				154454D52B2D67CC0049682B /* ShoesCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		154454D72B2D67EB0049682B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				154454D82B2D67FA0049682B /* Shoes.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		154454DA2B2D694A0049682B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				154454DB2B2D69620049682B /* HomeCollectionViewFactory.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		154454DD2B2D6B3E0049682B /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				154454DE2B2D6B460049682B /* Colors.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		154454E02B2D6CEA0049682B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				154454E12B2D6E6B0049682B /* ShoesService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		154454E32B2D778C0049682B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				154454E42B2D77970049682B /* ShoesCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		155FF46E2B29F440000971E1 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,7 +207,7 @@
 		155FF4852B2A009F000971E1 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				3652D5A32B29E116005FA742 /* HomeViewController.swift */,
+				154454D32B2D67B70049682B /* Home */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -160,6 +232,7 @@
 		155FF48C2B2A0176000971E1 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				154454DD2B2D6B3E0049682B /* Colors */,
 				3652D5AA2B29E117005FA742 /* LaunchScreen.storyboard */,
 				3652D5A82B29E117005FA742 /* Assets.xcassets */,
 			);
@@ -188,6 +261,7 @@
 		3652D59E2B29E116005FA742 /* SneakerStore */ = {
 			isa = PBXGroup;
 			children = (
+				154454E02B2D6CEA0049682B /* Services */,
 				3652D5AD2B29E117005FA742 /* Info.plist */,
 				3652D59F2B29E116005FA742 /* AppDelegate.swift */,
 				36A662D12B2DB921000D3C55 /* Authorization */,
@@ -411,21 +485,27 @@
 				36A662D82B2DBBFA000D3C55 /* UIButton+Extensions.swift in Sources */,
 				3652D5C02B2CB943005FA742 /* UIColor+Extensions.swift in Sources */,
 				3652D5C22B2CB94E005FA742 /* UILabel+Extensions.swift in Sources */,
+				154454D92B2D67FA0049682B /* Shoes.swift in Sources */,
+				154454E52B2D77970049682B /* ShoesCellViewModel.swift in Sources */,
 				155FF47A2B29F7D4000971E1 /* TabBarModulesFactory.swift in Sources */,
 				155FF4722B29F466000971E1 /* Coordinator.swift in Sources */,
+				154454DF2B2D6B460049682B /* Colors.swift in Sources */,
 				155FF4832B29FFC2000971E1 /* CartViewController.swift in Sources */,
 				3652D5A42B29E116005FA742 /* HomeViewController.swift in Sources */,
 				3652D5C92B2CBAC3005FA742 /* ProfileViewController.swift in Sources */,
 				36A662D62B2DB974000D3C55 /* WelcomeViewController.swift in Sources */,
 				36A662DD2B2DD96F000D3C55 /* AccountService.swift in Sources */,
 				3652D5CB2B2CBC82005FA742 /* Foundation+Extensions.swift in Sources */,
+				154454D62B2D67CC0049682B /* ShoesCell.swift in Sources */,
 				155FF4812B29FB7A000971E1 /* TabBar.swift in Sources */,
 				3652D5C62B2CBA9D005FA742 /* ProfileCoordinator.swift in Sources */,
 				155FF48B2B2A0148000971E1 /* CartCoordinator.swift in Sources */,
+				154454DC2B2D69620049682B /* HomeCollectionViewFactory.swift in Sources */,
 				155FF47E2B29F81B000971E1 /* TabBarViewController.swift in Sources */,
 				3652D5BB2B2CB1DD005FA742 /* OnboardingViewController.swift in Sources */,
 				155FF4872B2A00AD000971E1 /* HomeCoordinator.swift in Sources */,
 				3652D5B92B2CB1B0005FA742 /* OnboardingCoordinator.swift in Sources */,
+				154454E22B2D6E6B0049682B /* ShoesService.swift in Sources */,
 				155FF4782B29F796000971E1 /* TabBarCoordinator.swift in Sources */,
 				36A662D32B2DB940000D3C55 /* WelcomeCoordinator.swift in Sources */,
 				3652D5A02B29E116005FA742 /* AppDelegate.swift in Sources */,

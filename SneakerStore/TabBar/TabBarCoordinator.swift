@@ -18,6 +18,7 @@ final class TabBarCoordinator: Coordinator {
     
     private func runHomeFlow() -> UINavigationController {
         let homeNavigationController = UINavigationController()
+        homeNavigationController.tabBarItem.title = "Catalog"
         homeNavigationController.tabBarItem.image = UIImage(systemName: "house.fill")
         let homeCoordinator = HomeCoordinator(navigationController: homeNavigationController)
         homeCoordinator.start()
@@ -26,6 +27,7 @@ final class TabBarCoordinator: Coordinator {
     
     private func runCartFlow() -> UINavigationController {
         let cartNavigationController = UINavigationController()
+        cartNavigationController.tabBarItem.title = "Cart"
         cartNavigationController.tabBarItem.image = UIImage(systemName: "cart.fill")
         let cartCoordinator = CartCoordinator(navigationController: cartNavigationController)
         cartCoordinator.start()
