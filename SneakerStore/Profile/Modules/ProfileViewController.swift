@@ -73,7 +73,6 @@ class ProfileViewController: UIViewController {
     
     private let shoeSizeNumber: UILabel = {
         let label = UILabel()
-        label.text = "41,5"
         label.textColor = UIColor.gray
         return label
     }()
@@ -89,15 +88,11 @@ class ProfileViewController: UIViewController {
     }()
     
     
-    
-    
     private let accountInfoView = UIView()
     private let orderHistoryView = UIView()
     private let shoeSizeView = UIView()
     private let knowSizeView = UIView()
     private let shoeAuthView = UIView()
-    
-    
     
     
     override func viewDidLoad() {
@@ -107,8 +102,13 @@ class ProfileViewController: UIViewController {
 
         setupUI()
         
-        title = "Cart"
-        view.backgroundColor = UIColor(red: 246, green: 246, blue: 246, alpha: 1)
+        title = "Profile"
+        self.view.backgroundColor = .white
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        shoeSizeNumber.text = UserDefaults.standard.string(forKey: "shoeSize")
     }
     
     private func setupUI() {
@@ -145,6 +145,9 @@ class ProfileViewController: UIViewController {
         
     
         accountInfoView.backgroundColor = .white
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(goToAccountInfo))
+        accountInfoView.addGestureRecognizer(tapGesture)
     }
     
     private func createOrderHistorySection() {
@@ -196,7 +199,7 @@ class ProfileViewController: UIViewController {
         shoeSizeNumber.snp.makeConstraints {
             $0.centerY.equalToSuperview()
             $0.trailing.equalTo(shoeSizeArrow.snp.leading).offset(-12)
-            $0.width.equalTo(33)
+            $0.width.equalTo(43)
             $0.height.equalTo(22)
             
         }
@@ -209,6 +212,9 @@ class ProfileViewController: UIViewController {
         }
         
         shoeSizeView.backgroundColor = .white
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(goToShoeSizeSelection))
+        shoeSizeView.addGestureRecognizer(tapGesture)
     }
     
     private func createKnowSize() {
@@ -278,6 +284,16 @@ class ProfileViewController: UIViewController {
         let vc = SignOutPopUpViewController()
         vc.modalPresentationStyle = .popover
         present(vc, animated: true)
+    }
+    
+    @objc func goToShoeSizeSelection() {
+        let shoeSizeViewController = ShoeSizeViewController()
+        navigationController?.pushViewController(shoeSizeViewController, animated: true)
+    }
+    
+    @objc private func goToAccountInfo() {
+        let accountInfoViewController = AccountInfoViewController()
+        navigationController?.pushViewController(accountInfoViewController, animated: true)
     }
 
 }

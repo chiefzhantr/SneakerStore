@@ -21,13 +21,6 @@ class SignOutPopUpViewController: UIViewController {
         popUpView.layer.cornerRadius = 10
         view.addSubview(popUpView)
         
-//        popUpView.translatesAutoresizingMaskIntoConstraints = false
-//        NSLayoutConstraint.activate([
-//            popUpView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-//            popUpView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-//            popUpView.widthAnchor.constraint(equalToConstant: 300),
-//            popUpView.heightAnchor.constraint(equalToConstant: 150)
-//        ])
         
         popUpView.snp.makeConstraints { make in
             make.center.equalToSuperview()
@@ -41,12 +34,6 @@ class SignOutPopUpViewController: UIViewController {
         titleLabel.numberOfLines = 2
         popUpView.addSubview(titleLabel)
         
-//        titleLabel.translatesAutoresizingMaskIntoConstraints = false
-//        NSLayoutConstraint.activate([
-//            titleLabel.topAnchor.constraint(equalTo: popUpView.topAnchor, constant: 20),
-//            titleLabel.leadingAnchor.constraint(equalTo: popUpView.leadingAnchor, constant: 16),
-//            titleLabel.trailingAnchor.constraint(equalTo: popUpView.trailingAnchor, constant: -16)
-//        ])
         
         titleLabel.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(20)
@@ -60,16 +47,12 @@ class SignOutPopUpViewController: UIViewController {
         cancelButton.addTarget(self, action: #selector(cancelButtonTapped), for: .touchUpInside)
         popUpView.addSubview(cancelButton)
         
-//        cancelButton.translatesAutoresizingMaskIntoConstraints = false
-//        NSLayoutConstraint.activate([
-//            cancelButton.bottomAnchor.constraint(equalTo: popUpView.bottomAnchor, constant: -20),
-//            cancelButton.leadingAnchor.constraint(equalTo: popUpView.leadingAnchor, constant: 40)
-//        ])
         
         cancelButton.snp.makeConstraints { make in
             make.bottom.equalToSuperview().offset(-20)
             make.leading.equalToSuperview().offset(40)
         }
+        
         
         let confirmButton = UIButton()
         confirmButton.setTitle("Confirm", for: .normal)
@@ -77,12 +60,7 @@ class SignOutPopUpViewController: UIViewController {
         confirmButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 17)
         confirmButton.addTarget(self, action: #selector(confirmButtonTapped), for: .touchUpInside)
         popUpView.addSubview(confirmButton)
-        
-//        confirmButton.translatesAutoresizingMaskIntoConstraints = false
-//            NSLayoutConstraint.activate([
-//            confirmButton.bottomAnchor.constraint(equalTo: popUpView.bottomAnchor, constant: -20),
-//            confirmButton.trailingAnchor.constraint(equalTo: popUpView.trailingAnchor, constant: -40)
-//        ])
+    
         
         confirmButton.snp.makeConstraints { make in
             make.bottom.equalToSuperview().offset(-20)
