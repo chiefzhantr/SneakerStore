@@ -17,11 +17,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow()
         window?.makeKeyAndVisible()
         
-        let navigationController = UINavigationController()
+        let navigationController = UINavigationController(rootViewController: OnboardingViewController())
         window?.rootViewController = navigationController
+        navigationController.navigationBar.tintColor = .black
         
-        tabBarCoordinator = TabBarCoordinator(navigationController: navigationController)
-        tabBarCoordinator?.start()
+//        let navigationController = UINavigationController()
+//        window?.rootViewController = navigationController
+//
+//        tabBarCoordinator = TabBarCoordinator(navigationController: navigationController)
+//        tabBarCoordinator?.start()
         
         return true
     }

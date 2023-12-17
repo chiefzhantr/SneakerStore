@@ -10,7 +10,7 @@ final class TabBarCoordinator: Coordinator {
     
     func start() {
         let controller = modulesFactory.makeTabBar(
-            with: [runHomeFlow(), runCartFlow()],
+            with: [runHomeFlow(), runCartFlow(), runProfileFlow()],
             selectedTabBar: .home
         )
         navigationController.pushViewController(controller, animated: false)
@@ -32,5 +32,13 @@ final class TabBarCoordinator: Coordinator {
         let cartCoordinator = CartCoordinator(navigationController: cartNavigationController)
         cartCoordinator.start()
         return cartNavigationController
+    }
+    
+    private func runProfileFlow() -> UINavigationController {
+        let profileNavigationController = UINavigationController()
+        profileNavigationController.tabBarItem.image = UIImage(systemName: "person.fill")
+        let profileCoordinator = ProfileCoordinator(navigationController: profileNavigationController)
+        profileCoordinator.start()
+        return profileNavigationController
     }
 }
