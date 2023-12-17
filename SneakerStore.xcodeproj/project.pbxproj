@@ -37,8 +37,6 @@
 		3652D5BD2B2CB6F1005FA742 /* OnboardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3652D5BC2B2CB6F1005FA742 /* OnboardingPageViewController.swift */; };
 		3652D5C02B2CB943005FA742 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3652D5BF2B2CB943005FA742 /* UIColor+Extensions.swift */; };
 		3652D5C22B2CB94E005FA742 /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3652D5C12B2CB94E005FA742 /* UILabel+Extensions.swift */; };
-		3652D5C62B2CBA9D005FA742 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3652D5C52B2CBA9D005FA742 /* ProfileCoordinator.swift */; };
-		3652D5C92B2CBAC3005FA742 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3652D5C82B2CBAC3005FA742 /* ProfileViewController.swift */; };
 		3652D5CB2B2CBC82005FA742 /* Foundation+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3652D5CA2B2CBC82005FA742 /* Foundation+Extensions.swift */; };
 		36A662D32B2DB940000D3C55 /* WelcomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A662D22B2DB940000D3C55 /* WelcomeCoordinator.swift */; };
 		36A662D62B2DB974000D3C55 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A662D52B2DB974000D3C55 /* WelcomeViewController.swift */; };
@@ -46,6 +44,11 @@
 		36A662DA2B2DC369000D3C55 /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A662D92B2DC369000D3C55 /* AuthorizationViewController.swift */; };
 		36A662DD2B2DD96F000D3C55 /* AccountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A662DC2B2DD96F000D3C55 /* AccountService.swift */; };
 		36A662E12B2EF1D4000D3C55 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A662E02B2EF1D4000D3C55 /* User.swift */; };
+		36A662FA2B2F15E1000D3C55 /* AccountInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A662F52B2F15E0000D3C55 /* AccountInfoViewController.swift */; };
+		36A662FB2B2F15E1000D3C55 /* SignOutPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A662F62B2F15E0000D3C55 /* SignOutPopUpViewController.swift */; };
+		36A662FC2B2F15E1000D3C55 /* ShoeSizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A662F72B2F15E0000D3C55 /* ShoeSizeViewController.swift */; };
+		36A662FD2B2F15E1000D3C55 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A662F82B2F15E0000D3C55 /* ProfileViewController.swift */; };
+		36A662FE2B2F15E1000D3C55 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A662F92B2F15E1000D3C55 /* ProfileCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,8 +83,6 @@
 		3652D5BC2B2CB6F1005FA742 /* OnboardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewController.swift; sourceTree = "<group>"; };
 		3652D5BF2B2CB943005FA742 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		3652D5C12B2CB94E005FA742 /* UILabel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extensions.swift"; sourceTree = "<group>"; };
-		3652D5C52B2CBA9D005FA742 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
-		3652D5C82B2CBAC3005FA742 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		3652D5CA2B2CBC82005FA742 /* Foundation+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Foundation+Extensions.swift"; sourceTree = "<group>"; };
 		36A662D22B2DB940000D3C55 /* WelcomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeCoordinator.swift; sourceTree = "<group>"; };
 		36A662D52B2DB974000D3C55 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +90,11 @@
 		36A662D92B2DC369000D3C55 /* AuthorizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
 		36A662DC2B2DD96F000D3C55 /* AccountService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountService.swift; sourceTree = "<group>"; };
 		36A662E02B2EF1D4000D3C55 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		36A662F52B2F15E0000D3C55 /* AccountInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountInfoViewController.swift; sourceTree = "<group>"; };
+		36A662F62B2F15E0000D3C55 /* SignOutPopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignOutPopUpViewController.swift; sourceTree = "<group>"; };
+		36A662F72B2F15E0000D3C55 /* ShoeSizeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoeSizeViewController.swift; sourceTree = "<group>"; };
+		36A662F82B2F15E0000D3C55 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		36A662F92B2F15E1000D3C55 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
 		D93393B45F4F278E91874CA5 /* Pods_SneakerStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SneakerStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFE1AAC1F437EAEE611B723F /* Pods-SneakerStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SneakerStore.release.xcconfig"; path = "Target Support Files/Pods-SneakerStore/Pods-SneakerStore.release.xcconfig"; sourceTree = "<group>"; };
 		FF1B5D9E84B7A86CCCC3023E /* Pods-SneakerStore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SneakerStore.debug.xcconfig"; path = "Target Support Files/Pods-SneakerStore/Pods-SneakerStore.debug.xcconfig"; sourceTree = "<group>"; };
@@ -362,18 +368,10 @@
 		3652D5C32B2CBA6C005FA742 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				3652D5C42B2CBA8E005FA742 /* Modules */,
-				3652D5C52B2CBA9D005FA742 /* ProfileCoordinator.swift */,
+				36A662F42B2F15E0000D3C55 /* Modules */,
+				36A662F92B2F15E1000D3C55 /* ProfileCoordinator.swift */,
 			);
 			path = Profile;
-			sourceTree = "<group>";
-		};
-		3652D5C42B2CBA8E005FA742 /* Modules */ = {
-			isa = PBXGroup;
-			children = (
-				3652D5C82B2CBAC3005FA742 /* ProfileViewController.swift */,
-			);
-			path = Modules;
 			sourceTree = "<group>";
 		};
 		36A662D12B2DB921000D3C55 /* Authorization */ = {
@@ -408,6 +406,17 @@
 				36A662E02B2EF1D4000D3C55 /* User.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		36A662F42B2F15E0000D3C55 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				36A662F52B2F15E0000D3C55 /* AccountInfoViewController.swift */,
+				36A662F62B2F15E0000D3C55 /* SignOutPopUpViewController.swift */,
+				36A662F72B2F15E0000D3C55 /* ShoeSizeViewController.swift */,
+				36A662F82B2F15E0000D3C55 /* ProfileViewController.swift */,
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		7CC02F483BE7078C4D7949D0 /* Frameworks */ = {
@@ -543,6 +552,7 @@
 			files = (
 				36A662DA2B2DC369000D3C55 /* AuthorizationViewController.swift in Sources */,
 				3652D5BD2B2CB6F1005FA742 /* OnboardingPageViewController.swift in Sources */,
+				36A662FC2B2F15E1000D3C55 /* ShoeSizeViewController.swift in Sources */,
 				36A662D82B2DBBFA000D3C55 /* UIButton+Extensions.swift in Sources */,
 				3652D5C02B2CB943005FA742 /* UIColor+Extensions.swift in Sources */,
 				3652D5C22B2CB94E005FA742 /* UILabel+Extensions.swift in Sources */,
@@ -551,6 +561,8 @@
 				15A3F4D62B2EC980004F4E44 /* CartTableViewFactory.swift in Sources */,
 				155FF47A2B29F7D4000971E1 /* TabBarModulesFactory.swift in Sources */,
 				36A662E12B2EF1D4000D3C55 /* User.swift in Sources */,
+				36A662FB2B2F15E1000D3C55 /* SignOutPopUpViewController.swift in Sources */,
+				36A662FA2B2F15E1000D3C55 /* AccountInfoViewController.swift in Sources */,
 				155FF4722B29F466000971E1 /* Coordinator.swift in Sources */,
 				154454DF2B2D6B460049682B /* Colors.swift in Sources */,
 				15A3F4D82B2ECA4F004F4E44 /* CartEmptyView.swift in Sources */,
@@ -558,21 +570,21 @@
 				15A3F4DF2B2EE55E004F4E44 /* SuccessOrderViewController.swift in Sources */,
 				155FF4832B29FFC2000971E1 /* CartViewController.swift in Sources */,
 				3652D5A42B29E116005FA742 /* HomeViewController.swift in Sources */,
-				3652D5C92B2CBAC3005FA742 /* ProfileViewController.swift in Sources */,
 				36A662D62B2DB974000D3C55 /* WelcomeViewController.swift in Sources */,
 				36A662DD2B2DD96F000D3C55 /* AccountService.swift in Sources */,
 				3652D5CB2B2CBC82005FA742 /* Foundation+Extensions.swift in Sources */,
 				154454D62B2D67CC0049682B /* ShoesCell.swift in Sources */,
 				155FF4812B29FB7A000971E1 /* TabBar.swift in Sources */,
-				3652D5C62B2CBA9D005FA742 /* ProfileCoordinator.swift in Sources */,
 				155FF48B2B2A0148000971E1 /* CartCoordinator.swift in Sources */,
 				154454DC2B2D69620049682B /* HomeCollectionViewFactory.swift in Sources */,
 				15A3F4DA2B2ED812004F4E44 /* CartCellActionButton.swift in Sources */,
+				36A662FD2B2F15E1000D3C55 /* ProfileViewController.swift in Sources */,
 				15A3F4D42B2EC71F004F4E44 /* CartCell.swift in Sources */,
 				155FF47E2B29F81B000971E1 /* TabBarViewController.swift in Sources */,
 				3652D5BB2B2CB1DD005FA742 /* OnboardingViewController.swift in Sources */,
 				155FF4872B2A00AD000971E1 /* HomeCoordinator.swift in Sources */,
 				3652D5B92B2CB1B0005FA742 /* OnboardingCoordinator.swift in Sources */,
+				36A662FE2B2F15E1000D3C55 /* ProfileCoordinator.swift in Sources */,
 				154454E22B2D6E6B0049682B /* ShoesService.swift in Sources */,
 				155FF4782B29F796000971E1 /* TabBarCoordinator.swift in Sources */,
 				36A662D32B2DB940000D3C55 /* WelcomeCoordinator.swift in Sources */,
