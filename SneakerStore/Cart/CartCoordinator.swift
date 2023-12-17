@@ -9,6 +9,17 @@ final class CartCoordinator: Coordinator {
     
     func start() {
         let controller = CartViewController()
+        controller.actionButtonDidTap = { [weak self] in
+            self?.presentSuccessOrder()
+        }
         navigationController.pushViewController(controller, animated: false)
+    }
+    
+    func presentSuccessOrder() {
+        let controller = SuccessOrderViewController()
+        controller.onFinish = { [weak self] in
+            self?.navigationController.dismiss(animated: true)
+        }
+        navigationController.present(controller, animated: true)
     }
 }
