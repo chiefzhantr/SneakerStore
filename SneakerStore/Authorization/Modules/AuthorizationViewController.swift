@@ -43,7 +43,7 @@ class AuthorizationViewController: UIViewController {
     
     private let actionButton = UIButton.cornered(titleText: "")
     
-    var accountService : AccountService?
+    var accountService = AccountService()
     var authType : AuthorizationType
     
     //MARK: LifeCycle
@@ -122,7 +122,7 @@ class AuthorizationViewController: UIViewController {
     }
     
     @objc func signIn() {
-        guard let accountService = accountService, let username = usernameField.text, !username.isEmpty, let password = passwordField.text, !password.isEmpty else {
+        guard let username = usernameField.text, !username.isEmpty, let password = passwordField.text, !password.isEmpty else {
             statusLabel.text = "Username or password is wrong!"
             return
         }
@@ -142,7 +142,7 @@ class AuthorizationViewController: UIViewController {
             statusLabel.text = "Passwords are different!"
             return
         }
-        accountService?.createUser(username: username, password: password)
+        accountService.createUser(username: username, password: password)
         navigateToMainView()
     }
     

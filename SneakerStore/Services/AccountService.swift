@@ -18,8 +18,9 @@ final class AccountService {
            let savedPassword = retrievedData["password"] as? String {
             let shoeSize = retrievedData["shoeSize"] as? String
             self.user = User(username: savedUsername, password: savedPassword, shoeSize: shoeSize)
+        } else {
+            user = nil
         }
-        user = nil
     }
     
     func createUser(username: String, password: String) {
