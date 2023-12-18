@@ -314,6 +314,7 @@ class ProfileViewController: UIViewController {
             let navigationController = UINavigationController(rootViewController: OnboardingViewController())
             navigationController.navigationBar.tintColor = .black
             navigationController.modalPresentationStyle = .fullScreen
+            navigationController.modalTransitionStyle = .partialCurl
             self?.present(navigationController, animated: true)
         }
         
