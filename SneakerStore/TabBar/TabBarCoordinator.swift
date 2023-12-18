@@ -39,6 +39,7 @@ final class TabBarCoordinator: Coordinator {
     
     private func runProfileFlow() -> UINavigationController {
         let profileNavigationController = UINavigationController()
+        profileNavigationController.tabBarItem.title = "Profile"
         profileNavigationController.tabBarItem.image = UIImage(systemName: "person.fill")
         let profileCoordinator = ProfileCoordinator(navigationController: profileNavigationController)
         profileCoordinator.start()

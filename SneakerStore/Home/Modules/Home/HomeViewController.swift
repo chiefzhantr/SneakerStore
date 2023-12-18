@@ -15,7 +15,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         
         setup()
-        shoes = ShoesService.shared.getAllShoes()
+        shoes = ShoesService.shared.allShoes
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -77,7 +77,7 @@ extension HomeViewController: ShoesCellDelegate {
         shoes.isAdded
             ? ShoesService.shared.removeShoesFromCart(shoes)
             : ShoesService.shared.addShoesToCart(shoes)
-        shoes.isAdded = !shoes.isAdded
+        
         collectionView.reloadData()
     }
 }

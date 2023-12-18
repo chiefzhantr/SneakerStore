@@ -5,10 +5,13 @@ import UIKit
 final class ShoesService {
     static let shared = ShoesService()
     
+    var allShoes = [Shoes]()
     var cartItems = [Shoes]()
     var buyHistory = [Shoes]()
     
-    init() {}
+    init() {
+        self.allShoes = getAllShoes()
+    }
     
     func getAllShoes() -> [Shoes] {
         return [
@@ -58,6 +61,10 @@ final class ShoesService {
     }
     
     func addShoesToCart(_ item: Shoes) {
+        if let allShoesIndex = allShoes.firstIndex(where: { $0.equals(item) }) {
+            allShoes[allShoesIndex].isAdded = true
+        }
+        
         if let existingItemIndex = cartItems.firstIndex(where: { $0.equals(item) }) {
             cartItems[existingItemIndex].quantity += 1
         } else {
@@ -67,13 +74,17 @@ final class ShoesService {
     }
     
     func removeShoesFromCart(_ item: Shoes) {
-        guard let itemIndex = cartItems.firstIndex(where: { $0.equals(item) }) else {
+        guard
+            let itemIndex = cartItems.firstIndex(where: { $0.equals(item) }),
+            let allShoesIndex = allShoes.firstIndex(where: { $0.equals(item) })
+        else {
             return
         }
         
         if cartItems[itemIndex].quantity > 1 {
             cartItems[itemIndex].quantity -= 1
         } else {
+            allShoes[allShoesIndex].isAdded = false
             cartItems.remove(at: itemIndex)
         }
     }
