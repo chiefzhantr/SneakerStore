@@ -24,12 +24,14 @@ class ShoeSizeViewController: UIViewController {
         textField.borderStyle = .roundedRect
         return textField
     }()
-    
+
     private let saveButton: UIButton = {
         let button = UIButton()
-        button.setTitle("Save", for: .normal)
+        button.layer.cornerRadius = 28
         button.backgroundColor = .black
-        button.layer.cornerRadius = 10
+        button.setTitle("Save", for: .normal)
+        button.titleLabel?.textColor = .white
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 17, weight: .bold)
         return button
     }()
     
@@ -50,22 +52,22 @@ class ShoeSizeViewController: UIViewController {
     }
     
     private func configureConstraints() {
-        titleLabel.snp.makeConstraints { make in
-            make.top.equalTo(view.safeAreaLayoutGuide).offset(20)
-            make.centerX.equalToSuperview()
+        titleLabel.snp.makeConstraints {
+            $0.top.equalTo(view.safeAreaLayoutGuide).offset(20)
+            $0.centerX.equalToSuperview()
         }
         
-        shoeSizeTextField.snp.makeConstraints { make in
-            make.top.equalTo(titleLabel.snp.bottom).offset(20)
-            make.leading.trailing.equalToSuperview().inset(16)
-            make.height.equalTo(40)
+        shoeSizeTextField.snp.makeConstraints {
+            $0.top.equalTo(titleLabel.snp.bottom).offset(20)
+            $0.leading.trailing.equalToSuperview().inset(16)
+            $0.height.equalTo(40)
         }
         
-        saveButton.snp.makeConstraints { make in
-            make.top.equalTo(shoeSizeTextField.snp.bottom).offset(20)
-            make.centerX.equalToSuperview()
-            make.width.equalTo(100)
-            make.height.equalTo(40)
+        saveButton.snp.makeConstraints {
+            $0.top.equalTo(shoeSizeTextField.snp.bottom).offset(50)
+            $0.centerX.equalToSuperview()
+            $0.width.equalTo(358)
+            $0.height.equalTo(54)
         }
     }
     
@@ -73,9 +75,9 @@ class ShoeSizeViewController: UIViewController {
         guard let shoeSizeText = shoeSizeTextField.text, !shoeSizeText.isEmpty else {
             return
         }
+        
         UserDefaults.standard.setValue(shoeSizeText, forKey: "shoeSize")
         shoeSizeTextField.resignFirstResponder()
         navigationController?.popToRootViewController(animated: true)
     }
-
 }

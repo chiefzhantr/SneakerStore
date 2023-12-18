@@ -9,6 +9,9 @@ import UIKit
 import SnapKit
 
 class AccountInfoViewController: UIViewController {
+    
+    private let accountService = AccountService()
+    
     private let usernameTextField: UITextField = {
         let textField = UITextField()
         textField.placeholder = "Username"
@@ -22,13 +25,6 @@ class AccountInfoViewController: UIViewController {
         textField.borderStyle = .roundedRect
         return textField
     }()
-    
-//    private let confirmPasswordTextField: UITextField = {
-//        let textField = UITextField()
-//        textField.placeholder = "Confirm Password"
-//        textField.borderStyle = .roundedRect
-//        return textField
-//    }()
     
     private let saveChangesButton: UIButton = {
         let button = UIButton()
@@ -54,9 +50,15 @@ class AccountInfoViewController: UIViewController {
         
         view.addSubview(usernameTextField)
         view.addSubview(passwordTextField)
-//        view.addSubview(confirmPasswordTextField)
         view.addSubview(saveChangesButton)
         
+        if let user = accountService.getUser() {
+            usernameTextField.text = user.username
+        }
+        
+        if let user = accountService.getUser() {
+            passwordTextField.text = user.password
+        }
         
         usernameTextField.snp.makeConstraints {
             $0.top.equalToSuperview().inset(86+26)
@@ -70,20 +72,12 @@ class AccountInfoViewController: UIViewController {
             $0.height.equalTo(52)
         }
         
-//        confirmPasswordTextField.snp.makeConstraints {
-//            $0.top.equalTo(passwordTextField.snp.bottom).offset(16)
-//            $0.leading.trailing.equalToSuperview().inset(16)
-//            $0.height.equalTo(52)
-//        }
-        
         saveChangesButton.snp.makeConstraints {
             $0.top.equalTo(usernameTextField.snp.bottom).offset(120)
             $0.centerX.equalToSuperview()
             $0.width.equalTo(358)
             $0.height.equalTo(54)
         }
-        
-
     }
     
     
@@ -105,20 +99,9 @@ class AccountInfoViewController: UIViewController {
             return
         }
         
-//        guard let confirmPassword = confirmPasswordTextField.text, !confirmPassword.isEmpty else {
-//            showAlert(message: "Please confirm your password.")
-//            return
-//        }
-        
-//        guard password == confirmPassword else {
-//            showAlert(message: "Passwords do not match.")
-//            return
-//        }
-        
         UserDefaults.standard.set(username, forKey: "username")
         UserDefaults.standard.set(password, forKey: "password")
         
         self.dismiss(animated: true, completion: nil)
     }
-    
 }
