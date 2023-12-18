@@ -10,6 +10,10 @@ import SnapKit
 
 class ProfileViewController: UIViewController {
     
+    private let accountService = AccountService()
+    
+    let colors = Colors()
+    
     private let accountInfoLabel: UILabel = {
         let label = UILabel()
         label.text = "Account Information"
@@ -104,6 +108,8 @@ class ProfileViewController: UIViewController {
         
         title = "Profile"
         self.view.backgroundColor = .white
+        self.view.backgroundColor = Colors.grayBackground
+        shoeSizeNumber.textColor = Colors.basicGray
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -123,6 +129,8 @@ class ProfileViewController: UIViewController {
         view.addSubview(accountInfoView)
         accountInfoView.addSubview(accountInfoLabel)
         accountInfoView.addSubview(accountInfoArrow)
+        
+        accountInfoView.layer.cornerRadius = 12
         
         accountInfoView.snp.makeConstraints {
             $0.top.equalToSuperview().inset(26+86)
@@ -155,6 +163,8 @@ class ProfileViewController: UIViewController {
         orderHistoryView.addSubview(orderHistoryLabel)
         orderHistoryView.addSubview(orderHistoryArrow)
         
+        orderHistoryView.layer.cornerRadius = 12
+        
         orderHistoryView.snp.makeConstraints {
             $0.top.equalTo(accountInfoView.snp.bottom).offset(16)
             $0.leading.trailing.equalToSuperview()
@@ -183,6 +193,8 @@ class ProfileViewController: UIViewController {
         shoeSizeView.addSubview(shoeSizeArrow)
         shoeSizeView.addSubview(shoeSizeNumber)
         
+        shoeSizeView.layer.cornerRadius = 12
+        
         shoeSizeView.snp.makeConstraints {
             $0.top.equalTo(orderHistoryView.snp.bottom).offset(16)
             $0.leading.trailing.equalToSuperview()
@@ -199,9 +211,8 @@ class ProfileViewController: UIViewController {
         shoeSizeNumber.snp.makeConstraints {
             $0.centerY.equalToSuperview()
             $0.trailing.equalTo(shoeSizeArrow.snp.leading).offset(-12)
-            $0.width.equalTo(43)
+            $0.width.equalTo(38)
             $0.height.equalTo(22)
-            
         }
         
         shoeSizeArrow.snp.makeConstraints {
@@ -222,6 +233,8 @@ class ProfileViewController: UIViewController {
         knowSizeView.addSubview(knowSizeLabel)
         knowSizeView.addSubview(knowSizeIcon)
         
+        knowSizeView.layer.cornerRadius = 12
+        
         knowSizeView.snp.makeConstraints {
             $0.top.equalTo(shoeSizeView.snp.bottom).offset(16)
             $0.leading.trailing.equalToSuperview()
@@ -241,6 +254,9 @@ class ProfileViewController: UIViewController {
         }
         
         knowSizeView.backgroundColor = .white
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(openShoeSizeGuide))
+        knowSizeView.addGestureRecognizer(tapGesture)
     }
     
     private func createShoeAuth() {
@@ -248,6 +264,8 @@ class ProfileViewController: UIViewController {
         shoeAuthView.addSubview(shoeAuthLabel)
         shoeAuthView.addSubview(shoeAuthIcon)
         view.addSubview(signOutBtn)
+        
+        shoeAuthView.layer.cornerRadius = 12
         
         shoeAuthView.snp.makeConstraints {
             $0.top.equalTo(knowSizeView.snp.bottom).offset(16)
@@ -276,14 +294,29 @@ class ProfileViewController: UIViewController {
         }
     
         shoeAuthView.backgroundColor = .white
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(openShoeAuth))
+        shoeAuthView.addGestureRecognizer(tapGesture)
     }
     
     
     
+    
     @objc func signOutAction(){
-        let vc = SignOutPopUpViewController()
-        vc.modalPresentationStyle = .popover
-        present(vc, animated: true)
+        let alert = UIAlertController(title: "Sign Out", message: "Are you sure you want to confirm?", preferredStyle: .alert)
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        
+        let confirmAction = UIAlertAction(title: "Confirm", style: .default) { [weak self] _ in
+            self?.accountService.signOut()
+            let navigationController = UINavigationController(rootViewController: OnboardingViewController())
+            navigationController.navigationBar.tintColor = .black
+            navigationController.modalPresentationStyle = .fullScreen
+            self?.present(navigationController, animated: true)
+        }
+        
+        alert.addAction(cancelAction)
+        alert.addAction(confirmAction)
+        present(alert, animated: true, completion: nil)
     }
     
     @objc func goToShoeSizeSelection() {
@@ -295,5 +328,16 @@ class ProfileViewController: UIViewController {
         let accountInfoViewController = AccountInfoViewController()
         navigationController?.pushViewController(accountInfoViewController, animated: true)
     }
-
+    
+    @objc private func openShoeSizeGuide() {
+        if let url = URL(string: "https://www.chikoshoes.com/wp-content/uploads/2018/04/chiko-shoe-size-180427-1.jpg") {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
+    }
+    
+    @objc private func openShoeAuth() {
+        if let url = URL(string: "https://sneakersjoint.com/en/blog/how-to-know-whether-neakers-are-original-or-fake/?v=4aceb7d6b456#:~:text=Inside%20the%20shoe%20under%20the,also%20known%20as%20the%20SKU.") {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
+    }
 }
