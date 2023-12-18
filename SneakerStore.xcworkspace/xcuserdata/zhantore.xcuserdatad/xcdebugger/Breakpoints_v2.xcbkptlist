@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "12D733CF-5795-427D-877B-DEF5AECCF02D"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C66C4C3C-D815-4267-AC74-CFE6E4A47CB2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SneakerStore/Onboarding/Modules/OnboardingViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "configureBlurImageView()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C66C4C3C-D815-4267-AC74-CFE6E4A47CB2 - 3dd4c425dba56112"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SneakerStore.OnboardingViewController.setConstraints() -&gt; ()"
+                  moduleName = "SneakerStore"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhantore/Desktop/SneakerStore/SneakerStore/Onboarding/Modules/OnboardingViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "116">
+               </Location>
+               <Location
+                  uuid = "C66C4C3C-D815-4267-AC74-CFE6E4A47CB2 - 9035ef147678fa49"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (SnapKit.ConstraintMaker) -&gt; () in SneakerStore.OnboardingViewController.setConstraints() -&gt; ()"
+                  moduleName = "SneakerStore"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhantore/Desktop/SneakerStore/SneakerStore/Onboarding/Modules/OnboardingViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "C66C4C3C-D815-4267-AC74-CFE6E4A47CB2 - 646e62e140dd5089"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SneakerStore.OnboardingViewController.configureBlurImageView() -&gt; ()"
+                  moduleName = "SneakerStore"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhantore/Desktop/SneakerStore/SneakerStore/Onboarding/Modules/OnboardingViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "1564">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "43352219-3030-4858-999B-0D01C13F25EF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SneakerStore/Authorization/Modules/AuthorizationViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "142"
+            endingLineNumber = "142"
+            landmarkName = "signUp()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8721121F-C84B-4637-91D4-7F2A6BDB8A14"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SneakerStore/Authorization/Modules/AuthorizationViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
+            landmarkName = "signIn()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8721121F-C84B-4637-91D4-7F2A6BDB8A14 - 9cc8de6318969d11"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SneakerStore.AuthorizationViewController.signIn() -&gt; ()"
+                  moduleName = "SneakerStore"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhantore/Desktop/SneakerStore/SneakerStore/Authorization/Modules/AuthorizationViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "126"
+                  endingLineNumber = "126"
+                  offsetFromSymbolStart = "932">
+               </Location>
+               <Location
+                  uuid = "8721121F-C84B-4637-91D4-7F2A6BDB8A14 - 9cc8de6318969d11"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SneakerStore.AuthorizationViewController.signIn() -&gt; ()"
+                  moduleName = "SneakerStore"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhantore/Desktop/SneakerStore/SneakerStore/Authorization/Modules/AuthorizationViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "126"
+                  endingLineNumber = "126"
+                  offsetFromSymbolStart = "864">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AAE30B0C-654C-489D-97F6-CDD74C9E2F5D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SneakerStore/Authorization/Modules/AuthorizationViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "138"
+            endingLineNumber = "138"
+            landmarkName = "signUp()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2C7EB44C-A88E-4412-9A6C-609F9D4B85A0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SneakerStore/Services/AccountService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "createUser(username:password:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2C7EB44C-A88E-4412-9A6C-609F9D4B85A0 - e87ebd2ade0e3410"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SneakerStore.AccountService.createUser(username: Swift.String, password: Swift.String) -&gt; ()"
+                  moduleName = "SneakerStore"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhantore/Desktop/SneakerStore/SneakerStore/Services/AccountService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "2C7EB44C-A88E-4412-9A6C-609F9D4B85A0 - e87ebd2ade0e3410"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SneakerStore.AccountService.createUser(username: Swift.String, password: Swift.String) -&gt; ()"
+                  moduleName = "SneakerStore"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhantore/Desktop/SneakerStore/SneakerStore/Services/AccountService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "100">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8A318BB3-FC87-4926-8829-00150AD6C414"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SneakerStore/Services/AccountService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "checkUser(username:password:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8A318BB3-FC87-4926-8829-00150AD6C414 - 3c04c39752c2b942"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SneakerStore.AccountService.checkUser(username: Swift.String, password: Swift.String) -&gt; Swift.Bool"
+                  moduleName = "SneakerStore"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhantore/Desktop/SneakerStore/SneakerStore/Services/AccountService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "552">
+               </Location>
+               <Location
+                  uuid = "8A318BB3-FC87-4926-8829-00150AD6C414 - 3c04c39752c2b942"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SneakerStore.AccountService.checkUser(username: Swift.String, password: Swift.String) -&gt; Swift.Bool"
+                  moduleName = "SneakerStore"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhantore/Desktop/SneakerStore/SneakerStore/Services/AccountService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "344">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5E9C8AAB-5B06-43FA-8C23-96025E3E1D5B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SneakerStore/Authorization/Modules/AuthorizationViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "129"
+            endingLineNumber = "129"
+            landmarkName = "signIn()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AE44A672-B670-4FE8-899B-A8A948A58AE5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SneakerStore/Services/AccountService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "init()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "AE44A672-B670-4FE8-899B-A8A948A58AE5 - cba95a505c0ad92c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SneakerStore.AccountService.init() -&gt; SneakerStore.AccountService"
+                  moduleName = "SneakerStore"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhantore/Desktop/SneakerStore/SneakerStore/Services/AccountService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "168">
+               </Location>
+               <Location
+                  uuid = "AE44A672-B670-4FE8-899B-A8A948A58AE5 - cba95a505c0ad92c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SneakerStore.AccountService.init() -&gt; SneakerStore.AccountService"
+                  moduleName = "SneakerStore"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhantore/Desktop/SneakerStore/SneakerStore/Services/AccountService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "336">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FD14CB91-8DDC-4D38-8996-0366F006C53A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SneakerStore/Services/AccountService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "init()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "10487029-CFD5-4940-A038-ED1F10CDCE5A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SneakerStore/Authorization/Modules/AuthorizationViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
+            landmarkName = "signIn()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B9C11E7B-A4EE-414D-90D8-E35477109054"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SneakerStore/Services/AccountService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "checkUser(username:password:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B9C11E7B-A4EE-414D-90D8-E35477109054 - 3c04c39752c2b9c6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SneakerStore.AccountService.checkUser(username: Swift.String, password: Swift.String) -&gt; Swift.Bool"
+                  moduleName = "SneakerStore"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhantore/Desktop/SneakerStore/SneakerStore/Services/AccountService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "636">
+               </Location>
+               <Location
+                  uuid = "B9C11E7B-A4EE-414D-90D8-E35477109054 - 3c04c39752c2b9c6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SneakerStore.AccountService.checkUser(username: Swift.String, password: Swift.String) -&gt; Swift.Bool"
+                  moduleName = "SneakerStore"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhantore/Desktop/SneakerStore/SneakerStore/Services/AccountService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "116">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "84E52C82-4B95-4948-89FB-4693C302A225"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SneakerStore/Cart/Modules/Cart/CartViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "handleActionButton()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "84E52C82-4B95-4948-89FB-4693C302A225 - e82f399a52e17ac2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (SneakerStore.Shoes) -&gt; () in SneakerStore.CartViewController.handleActionButton() -&gt; ()"
+                  moduleName = "SneakerStore"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhantore/Desktop/SneakerStore/SneakerStore/Cart/Modules/Cart/CartViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "368">
+               </Location>
+               <Location
+                  uuid = "84E52C82-4B95-4948-89FB-4693C302A225 - e82f399a52e17d23"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (SneakerStore.Shoes) -&gt; () in SneakerStore.CartViewController.handleActionButton() -&gt; ()"
+                  moduleName = "SneakerStore"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhantore/Desktop/SneakerStore/SneakerStore/Cart/Modules/Cart/CartViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "368">
+               </Location>
+               <Location
+                  uuid = "84E52C82-4B95-4948-89FB-4693C302A225 - e82f399a52e17d23"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (SneakerStore.Shoes) -&gt; () in SneakerStore.CartViewController.handleActionButton() -&gt; ()"
+                  moduleName = "SneakerStore"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhantore/Desktop/SneakerStore/SneakerStore/Cart/Modules/Cart/CartViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "372">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EC3E60FF-A216-4AA1-93C6-32168EB289FD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SneakerStore/Profile/Modules/OrderHistory/OrderDetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
+            landmarkName = "collectionView(_:cellForItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

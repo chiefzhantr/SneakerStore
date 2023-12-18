@@ -6,6 +6,7 @@ final class ShoesService {
     static let shared = ShoesService()
     
     var cartItems = [Shoes]()
+    var buyHistory = [Shoes]()
     
     init() {}
     

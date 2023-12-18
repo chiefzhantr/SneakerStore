@@ -54,7 +54,19 @@ class CartViewController: UIViewController, CartViewOutput {
     }
     
     private func handleActionButton() {
-        ShoesService.shared.cartItems = []
+        let shoeService = ShoesService.shared
+        
+        cartShoes.forEach { shoe in
+            let formatter = DateFormatter()
+            formatter.dateFormat = "dd.MM.yyyy"
+            
+            let formattedDate = formatter.string(from: Date.now)
+            
+            shoe.purchaseDate = formattedDate
+            shoe.orderNumber = shoeService.buyHistory.count+1
+            shoeService.buyHistory.append(shoe)
+        }
+        shoeService.cartItems = []
         cartShoes = ShoesService.shared.cartItems
         updateEmptyViewVisibility()
         actionButtonDidTap?()

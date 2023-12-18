@@ -8,6 +8,8 @@ class Shoes {
     public let price: Int
     public var quantity: Int
     public var isAdded: Bool
+    public var purchaseDate: String?
+    public var orderNumber: Int?
     
     init(image: UIImage, shoesBrand: String, shoesDescription: String, price: Int) {
         self.id = UUID().uuidString
@@ -21,5 +23,9 @@ class Shoes {
     
     public func equals(_ shoes: Shoes) -> Bool {
         return self.id == shoes.id
+    }
+    
+    public func getPriceQuantity() -> String {
+        return "\(self.quantity) item • $\(self.price * self.quantity)"
     }
 }

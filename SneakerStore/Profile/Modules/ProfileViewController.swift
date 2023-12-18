@@ -185,6 +185,9 @@ class ProfileViewController: UIViewController {
         }
         
         orderHistoryView.backgroundColor = .white
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(goToOrderHistory))
+        orderHistoryView.addGestureRecognizer(tapGesture)
     }
     
     private func createShoeSizeSection() {
@@ -311,6 +314,7 @@ class ProfileViewController: UIViewController {
             let navigationController = UINavigationController(rootViewController: OnboardingViewController())
             navigationController.navigationBar.tintColor = .black
             navigationController.modalPresentationStyle = .fullScreen
+            navigationController.modalTransitionStyle = .partialCurl
             self?.present(navigationController, animated: true)
         }
         
@@ -329,6 +333,11 @@ class ProfileViewController: UIViewController {
         navigationController?.pushViewController(accountInfoViewController, animated: true)
     }
     
+    @objc private func goToOrderHistory() {
+        let orderHistoryViewController = OrderHistoryViewController()
+        navigationController?.pushViewController(orderHistoryViewController, animated: true)
+    }
+
     @objc private func openShoeSizeGuide() {
         if let url = URL(string: "https://www.chikoshoes.com/wp-content/uploads/2018/04/chiko-shoe-size-180427-1.jpg") {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
