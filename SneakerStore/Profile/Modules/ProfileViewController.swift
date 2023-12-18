@@ -175,6 +175,9 @@ class ProfileViewController: UIViewController {
         }
         
         orderHistoryView.backgroundColor = .white
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(goToOrderHistory))
+        orderHistoryView.addGestureRecognizer(tapGesture)
     }
     
     private func createShoeSizeSection() {
@@ -294,6 +297,11 @@ class ProfileViewController: UIViewController {
     @objc private func goToAccountInfo() {
         let accountInfoViewController = AccountInfoViewController()
         navigationController?.pushViewController(accountInfoViewController, animated: true)
+    }
+    
+    @objc private func goToOrderHistory() {
+        let orderHistoryViewController = OrderHistoryViewController()
+        navigationController?.pushViewController(orderHistoryViewController, animated: true)
     }
 
 }
